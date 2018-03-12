@@ -1,0 +1,39 @@
+<!DOCTYPE html "UTF-8">
+<html >
+    <head>
+        <meta charset="UTF-8"/>
+        <title>function in js</title>
+        <script src="test02.js"></script>
+        <script charset="UTF-8">
+            //hello("yudan");
+            function hello(parameter) {
+                alert("hello "+parameter);
+            }
+            // 匿名函数其实就类似于一个没有名字的对象，可以将它的引用赋值给变量
+            var fAdd = function (a,b) {
+                var c = a+b;
+                alert("我是匿名函数"+c);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Learning function in javascript.</h1>
+        <button onclick="run()">click run js</button>
+        <p>
+            <button onclick="fAdd(3,8)">add numbers</button>
+        </p>
+        <button onclick="gotoLink('https://www.baidu.com')">百度</button>
+        <p>
+            <button onclick="callOuter()">test outer and inner function</button>
+        </p>
+        <p>
+            <button onclick="testFunction()">test function</button>
+        </p>
+        <p>
+            <button onclick="new person('余丹',27).info()">build person</button>
+        </p>
+        <p>
+            <button onclick="testPropertyOfFunction()">函数的实例属性和类属性</button>
+        </p>
+    </body>
+</html>
